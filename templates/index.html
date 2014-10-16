@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% with page_title="This is my main page" %}
+{% include "head.html" %}
+{% endwith %}
+
+<body>
+
+	{% include "nav.html" %}
+
+  <div class="container">
+    
+ <section>
+  <div class="jumbotron">
+  	<h1>Improving people's lives</h1>
+	</div>
+
+  <div class="jumbotron">
+  	<h1>by improving</h1>
+  	<h1>the way we make decisions</h1>
+	</div>
+</section>
+
+<section>
+	<div class="row">
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "data.gov_html" %}
+	  </div>
+	  
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "people.gov_html" %}
+	  </div>
+	  
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "together.gov_html" %}
+	  </div>
+ 	</div>
+</section>
+
+<section>
+ 	<div class="row top30">
+ 		<div class="cols-xs-4 col-sm-4"></div>
+ 		<div class="cols-xs-4 col-sm-4">
+ 			<img src="{{images}}/govlab-logo.jpeg" class="img-circle" alt="GovLab logo"/>
+ 		</div>
+ 		<div class="cols-xs-4 col-sm-4"></div>
+ 	</div>
+</section>
+
+<!-- Learn Do Teach -->
+<section>
+	<div class="row">
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "learn_html" %}
+	  </div>
+	  
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "do_html" %}
+	  </div>
+	  
+	  <div class="cols-xs-12 col-sm-4">
+	    {% include "teach_html" %}
+	  </div>
+ 	</div>
+</section>
+
+
+</div>
+{% include "footer.html" %}
+
+</body>
+</html>

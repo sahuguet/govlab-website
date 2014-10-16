@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import glob
+import os
+
+from jinja2 import Environment, FileSystemLoader
+
+
+TEMPLATES_DIR = 'templates'
+
+def Main():
+  env = Environment(loader=FileSystemLoader(TEMPLATES_DIR),
+      extensions=['jinja2.ext.with_'])
+  templates = glob.glob(os.path.join(TEMPLATES_DIR, '*.html')) 
+
+  for page in ('index', 'about', 'test'):
+    template = env.get_template('%s.html' % page)
+    html = template.render(path='../bower_components/bootstrap-material-design/template/material/',
+      fancy=True, images='../img', css='../css', claudio=True)
+    with open('gen/%s.html' % page, 'w') as f:
+      f.write(html.encode('utf8'))
+      f.close()
+
+if __name__ == '__main__':
+  Main()

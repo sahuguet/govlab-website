@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page_title }}</title>
+
+{% if claudio %}
+  <link href="{{css}}/styles.css" rel="stylesheet">
+  {% endif %}
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  {% if fancy %}
+  <link href="{{path}}/css/ripples.min.css" rel="stylesheet">
+  <link href="{{path}}/css/material-wfont.min.css" rel="stylesheet">
+  {% else %}
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  {% endif %}
+
+<style>
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+</style>
+
+</head>

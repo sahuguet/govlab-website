@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% with page_title="This is my about page" %}
+{% include "head.html" %}
+{% endwith %}
+
+<body>
+
+	{% include "nav.html" %}
+
+  <div class="container">
+    
+    <h1>About us</h1>
+    
+    <div class="cols-xs-12 col-sm-6">
+      {% include "section2.html" %}
+    </div>
+    
+    <div class="cols-xs-12 col-sm-6">
+      {% include "section2.html" %}
+    </div>
+    
+  </div>
+
+{% include "footer.html" %}
+</body>
+</html>
