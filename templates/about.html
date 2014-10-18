@@ -1,17 +1,38 @@
-<!DOCTYPE html>
-<html lang="en-US">
-{% with page_title="This is my about page" %}
-{% include "head.html" %}
-{% endwith %}
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
 
-<body>
-
-	{% include "nav.html" %}
+{% block content %}
 
   <div class="container">
     
-    <h1>About us</h1>
-    
+    <section id="history">
+    <h1>History</h1>
+    </section>
+
+    <section id="team">
+    <h1>Team</h1>
+    <div id="container">
+  {% for item in items %}
+  <div class="item item-person">
+    <div><b>{{item.fname}} {{item.lname}}</b> <img class="avatar" src="{{item.photoUrl}}"></div>
+    <div>{{item.experience}}</div>
+  </div>
+  {% endfor %}
+</div>
+    </section>
+
+    <section id="funders">
+    <h1>Funders</h1>
+    </section>
+
+    <section id="careers">
+    <h1>Careers</h1>
+    </section>
+
+    <section id="contact-us">
+    <h1>Contact Us</h1>
+    </section>
+
     <div class="cols-xs-12 col-sm-6">
       {% include "section2.html" %}
     </div>
@@ -22,6 +43,14 @@
     
   </div>
 
-{% include "footer.html" %}
-</body>
-</html>
+  <script>
+var $container = $('#container'), filters = {};
+$container.isotope({
+  itemSelector : '.item',
+  layoutMode: 'fitRows'
+  // masonry: {
+  //   columnWidth: 80
+  // }
+  });
+</script>
+{% endblock %}

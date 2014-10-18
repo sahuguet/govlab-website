@@ -1,0 +1,99 @@
+- areas: []
+  description: !!python/unicode 'An expert network for open government innovators.
+    We will pilot it for a year in Latin America. Project partners: Mexican Presidency,
+    Transparencia Mexicana.'
+  tags:
+  - smarter-governance
+  title: Network of Innovators
+- areas:
+  - internal_tool
+  description: "Demos for Democracy are 30-minute interactive online introductions\
+    \ to some of the latest tools designed to bring greater openness and collaboration\
+    \ to how we govern. \r\n\r\nDemos for Democracy are 30-minute interactive online\
+    \ introductions to some of the latest tools designed to bring greater openness\
+    \ and collaboration to how we govern. \r\n\r\nHow it works?\r\n==========\r\n\
+    - Designers and builders showcase their work through a brief demo and question-and-answer\
+    \ session to which everyone is invited. \r\n- Sessions are recorded and archived.\
+    \ \r\n- Tools can be anything from software applications, devices, techniques,\
+    \ or even games.\r\n\r\nObjective\r\n=======\r\nJumpstart a conversation about\
+    \ what works and what doesn’t and to provide developers an interested audience\
+    \ to help refine and improve their tools."
+  tags:
+  - smarter governance
+  title: Demos4Democracy
+- areas:
+  - academy
+  description: !!python/unicode 'An academy for change agents.'
+  tags:
+  - learning
+  title: GovLab Academy
+- areas: []
+  description: !!python/unicode ''
+  tags: []
+  title: MacArthur Foundation Research Network on Opening Governance
+- areas:
+  - data_gov
+  - people_gov
+  - internal_tool
+  description: !!python/unicode 'Reinventing Internet governance.'
+  tags:
+  - ICANN
+  - mapping
+  title: Internet Governance
+- areas:
+  - internal_tool
+  description: !!python/unicode "Expert Systems attempt to emulate the problem-solving\
+    \ abilities of a human expert using a set of rules and inferences programmed into\
+    \ a computer system.\r\n\r\nAt the GovLab we are exploring and experimenting in\
+    \ the ways this kind of technology can: \r\n\r\n- Help us organize our knowledge,\
+    \ research and learnings; \r\n- Expand the availability and diffusion of our expertise;\
+    \ by,\r\n- Tailoring it to our users needs and circumstances. "
+  tags:
+  - knowledge management
+  title: GovLab's Expert System Strategy
+- areas:
+  - data_gov
+  description: !!python/unicode ''
+  tags: []
+  title: Open Data 500
+- areas:
+  - data_gov
+  description: !!python/unicode 'Tracing the economic impact of open and shared data
+    on SMEs and startups, to understand its impact on the general economy. '
+  tags:
+  - Open Data
+  - Shared Corporate Data
+  - Impact Analysis
+  - SMEs
+  - Markle
+  title: Open Data for SMEs
+- areas: []
+  description: !!python/unicode ''
+  tags: []
+  title: Empircal/Agile Research Design
+- areas: []
+  description: !!python/unicode 'bla bla'
+  tags: []
+  title: OrgPedia
+- areas:
+  - internal_tool
+  description: !!python/unicode 'A suite of tools for GovLabbers to be more productive.'
+  tags:
+  - tools
+  title: GovLab Intranet
+- areas: []
+  description: !!python/unicode ''
+  tags: []
+  title: Smarter Crowdsourcing at the FDA
+- areas:
+  - internal_tool
+  description: !!python/unicode "Building on the experience of others, the Crowdsourcing\
+    \ Design Advisor helps decision-makers in the public and private sector make an\
+    \ informed decision about when and how to use crowdsourcing.\r\n\r\nThrough a\
+    \ 5-minute guided interview the Advisor walks the user through a series of questions\
+    \ designed to provide customized case studies and learnings tailored to their\
+    \ needs and circumstances. "
+  tags:
+  - crowdsourcing smarter governance
+  title: Crowdsourcing Design Advisor
+

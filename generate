@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import glob
 import os
+import yaml
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -13,13 +14,52 @@ def Main():
       extensions=['jinja2.ext.with_'])
   templates = glob.glob(os.path.join(TEMPLATES_DIR, '*.html')) 
 
-  for page in ('index', 'about', 'test'):
+  for page in ('index', 'test'):
     template = env.get_template('%s.html' % page)
     html = template.render(path='../bower_components/bootstrap-material-design/template/material/',
-      fancy=True, images='../img', css='../css', claudio=True)
+      fancy=True, images='../img', includes='../includes', css='../css', claudio=True)
     with open('gen/%s.html' % page, 'w') as f:
       f.write(html.encode('utf8'))
       f.close()
+
+  people = yaml.load(open('users.yaml').read())
+
+  template = env.get_template('about.html')
+  html = template.render(path='../bower_components/bootstrap-material-design/template/material/',
+    fancy=True,
+    images='../img',
+    includes='../includes',
+    css='../css',
+    claudio=True,
+    items=people)
+  with open('gen/about.html', 'w') as f:
+    f.write(html.encode('utf8'))
+    f.close()
+
+  projects = yaml.load(open('projects.yaml').read())
+  template = env.get_template('projects.html')
+  html = template.render(path='../bower_components/bootstrap-material-design/template/material/',
+    fancy=True,
+    images='../img',
+    includes='../includes',
+    css='../css',
+    claudio=True,
+    items=projects)
+  with open('gen/projects.html', 'w') as f:
+    f.write(html.encode('utf8'))
+    f.close()
+
+  template = env.get_template('resources.html')
+  html = template.render(path='../bower_components/bootstrap-material-design/template/material/',
+    fancy=True,
+    images='../img',
+    includes='../includes',
+    css='../css',
+    claudio=True,
+    items=["Resource-%d" % k for k in range(1,40)] )
+  with open('gen/resources.html', 'w') as f:
+    f.write(html.encode('utf8'))
+    f.close()
 
 if __name__ == '__main__':
   Main()

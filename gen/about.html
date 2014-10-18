@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>This is my about page</title>
+	<head>
+    <meta charset="utf-8">
+    <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+	
   <link href="../css/styles.css" rel="stylesheet">
   
 
@@ -15,19 +16,54 @@
   <link href="../bower_components/bootstrap-material-design/template/material//css/material-wfont.min.css" rel="stylesheet">
   
 
-<style>
+	<link rel="stylesheet" href="../css/isotope.css">
+
+	<script src="../includes/jquery/jquery-2.1.0.min.js"></script>
+	<script src="../includes/jquery/jquery.isotope.min.js"></script>
+
+	<style>
+
+.avatar {
+width: 40px;
+height: 40px;
+border-radius: 20px;
+}
+
 .top5 { margin-top:5px; }
 .top7 { margin-top:7px; }
 .top10 { margin-top:10px; }
 .top15 { margin-top:15px; }
 .top17 { margin-top:17px; }
 .top30 { margin-top:30px; }
-</style>
 
-</head>
+.item {
+	border: 1px solid red;
+	min-width: 140px;
+	max-width: 250px;
+	min-height: 200px;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+}
 
+.item-person {
+	width: 200px;
+	height: 250px;
+	overflow: scroll;
+}
 
-<body>
+#container {
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	bordoer: 0px;
+}
+
+	</style>
+
+	<title>About</title>
+
+	</head>
+
+	<body>
 
 	<div style="margin: 20px;">
   <nav role="navigation" class="navbar navbar-default navbar-material-deeppurple">
@@ -39,32 +75,186 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a href="#" class="navbar-brand">The GovLab</a>
+              <a href="index.html" class="navbar-brand">The GovLab</a>
           </div>
           <!-- Collection of nav links and other content for toggling -->
           <div id="navbarCollapse" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                   <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Sponsors</a></li>
+            <li><a href="about.html#history">History</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#sponsors">Sponsors</a></li>
             <!-- <li class="divider"></li> -->
-            <li><a href="#">Careers</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
             <!-- <li class="divider"></li> -->
-            <li><a href="#">Contact us</a></li>
+            <li><a href="about.html#contact-us">Contact us</a></li>
           </ul></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Resources</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
               </ul>
           </div>
       </nav>
 </div>
 
+	
+
   <div class="container">
     
-    <h1>About us</h1>
-    
+    <section id="history">
+    <h1>History</h1>
+    </section>
+
+    <section id="team">
+    <h1>Team</h1>
+    <div id="container">
+  
+  <div class="item item-person">
+    <div><b>Alan Kantrow</b> <img class="avatar" src="https://lh3.googleusercontent.com/-o6o3i14PktY/AAAAAAAAAAI/AAAAAAAAADE/473Qz_ENopY/photo.jpg?sz=50"></div>
+    <div>academia AND industry
+professor of history and literature
+professor of management
+director of a research center
+professional editor (HBR and McKinsey Quarterly)
+director of communications (McKinsey)
+chief knowledge officer (Monitor)
+chief content officer (monitor)
+chief marketing officer (monitor)
+dean of faculty (monitor university)
+professional advisor on tertiary, professional, and vocational education</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Andrew Young</b> <img class="avatar" src="https://lh6.googleusercontent.com/-EOItWsZKTSE/AAAAAAAAAAI/AAAAAAAAAOk/8Brv61C5R5g/photo.jpg?sz=50"></div>
+    <div>Nearly two years experience at GovLab as research assistant, research fellow and associate director of research.
+
+Previously Markle Foundation research assistant focused on the use of technology and innovation to improve economic security.</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Antony Declercq</b> <img class="avatar" src="https://lh5.googleusercontent.com/-yBkg7dN5XnE/AAAAAAAAAAI/AAAAAAAAAGg/NNTfWPype9s/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Arnaud Sahuguet</b> <img class="avatar" src="https://lh5.googleusercontent.com/-XYNF0H4riKs/AAAAAAAAAAI/AAAAAAAAAAo/EdjuIQDwGMw/photo.jpg?sz=50"></div>
+    <div>- industrial research
+- product management
+- software engineering</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Audrey Ariss</b> <img class="avatar" src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Celia Parraud-Apparu</b> <img class="avatar" src="https://lh6.googleusercontent.com/-ne4d1YtEgZU/AAAAAAAAAAI/AAAAAAAAAAw/8ZKqtyYNhvU/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>David Sangokoya</b> <img class="avatar" src="https://lh6.googleusercontent.com/-8V5BnyHGU_s/AAAAAAAAAAI/AAAAAAAAAAg/BTI87MyQtVk/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Dinorah Cantu-Pedraza</b> <img class="avatar" src="https://lh3.googleusercontent.com/-0JW4iYiOIjc/AAAAAAAAAAI/AAAAAAAAAB8/nJ5bSqRrG1c/photo.jpg?sz=50"></div>
+    <div>Director of a Human Rights Center, International Human Rights Law Professor, Human Rights litigation (issues regarding LGBTQ rights; housing rights and political rights)</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Erika Harris</b> <img class="avatar" src="https://lh3.googleusercontent.com/-ovbDLS7qdn8/AAAAAAAAAAI/AAAAAAAAAfo/osDIcPOk3aM/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Joel Gurin</b> <img class="avatar" src="None"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Katherine Garcia</b> <img class="avatar" src="https://lh3.googleusercontent.com/-ZIyQWMikG7g/AAAAAAAAAAI/AAAAAAAABug/1gaYd7ku8IQ/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Laura Manley</b> <img class="avatar" src="https://lh5.googleusercontent.com/-7IsFpL50DFU/AAAAAAAAAAI/AAAAAAAAADg/HBwemKlaSaI/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Lauren Yu</b> <img class="avatar" src="https://lh3.googleusercontent.com/-6khNFj8jC8Y/AAAAAAAAAAI/AAAAAAAAARw/aznBuw1A438/photo.jpg?sz=50"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Lisbeth Salander</b> <img class="avatar" src="https://lh4.googleusercontent.com/-hlKjPu01KF8/AAAAAAAAAAI/AAAAAAAAABI/eBFZiRoIwgY/photo.jpg?sz=50"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Luis Daniel</b> <img class="avatar" src="https://lh4.googleusercontent.com/-Xs1X_zNgcFA/AAAAAAAAAAI/AAAAAAAAAZE/iB109xUHnKw/photo.jpg?sz=50"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Maria Hermosilla</b> <img class="avatar" src="https://lh5.googleusercontent.com/-1FtiyAoVNvg/AAAAAAAAAAI/AAAAAAAAABs/eezl2ND4c88/photo.jpg?sz=50"></div>
+    <div>4 years of experience in television and radio as a reporter, producer, editor.
+1 year in a non profit as a project manager.
+4 years in government. Main jobs were chief of staff for the Vice Minister of Energy and leading the Citizen Relations and Information Management Unit of the Ministry of Infraestructure.</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Andrew Miller</b> <img class="avatar" src="None"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Nikki Zeichner</b> <img class="avatar" src="https://lh6.googleusercontent.com/-LjUYgVRlZeY/AAAAAAAAAAI/AAAAAAAAADk/TG75rx-9X40/photo.jpg?sz=50"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Beth Noveck</b> <img class="avatar" src="None"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Robyn Caplan</b> <img class="avatar" src="None"></div>
+    <div></div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Samantha Grassle</b> <img class="avatar" src="https://lh5.googleusercontent.com/-TeOT2bX0aYU/AAAAAAAAAAI/AAAAAAAAAhs/cKHvvG5EwUA/photo.jpg?sz=50"></div>
+    <div>Previous Google Policy Fellow @ AAPD and Graduate Policy Intern at NYC Digital, Mayor's Office of Media and Entertainment</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Shruti Sannon</b> <img class="avatar" src="None"></div>
+    <div>N/A</div>
+  </div>
+  
+  <div class="item item-person">
+    <div><b>Stefaan Verhulst</b> <img class="avatar" src="None"></div>
+    <div>N/A</div>
+  </div>
+  
+</div>
+    </section>
+
+    <section id="funders">
+    <h1>Funders</h1>
+    </section>
+
+    <section id="careers">
+    <h1>Careers</h1>
+    </section>
+
+    <section id="contact-us">
+    <h1>Contact Us</h1>
+    </section>
+
     <div class="cols-xs-12 col-sm-6">
       <section>
   <h2>Section 2</h2>
@@ -82,7 +272,7 @@
 </section>
 
 <section>
-  <h2>Section 2</h2>
+  <h2 id="history">Section 2</h2>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </section>
 
@@ -114,7 +304,7 @@
 </section>
 
 <section>
-  <h2>Section 2</h2>
+  <h2 id="history">Section 2</h2>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </section>
 
@@ -131,41 +321,53 @@
     
   </div>
 
-
+  <script>
+var $container = $('#container'), filters = {};
+$container.isotope({
+  itemSelector : '.item',
+  layoutMode: 'fitRows'
+  // masonry: {
+  //   columnWidth: 80
+  // }
+  });
+</script>
 
 
 
 <footer class="b-footer">
-      <div class="row e-partners" style2="max-width: 62.5em;">
-        <div class="col-lg-3">
-          <h4>A partnership with</h4>
-          <img id="nuy-logo" src="../img/nyu-poly-logo-white.png" alt="NYU - Poly">
-        </div>
-        <div class="col-lg-3">
-          <h4>Sponsored by</h4>
-          <img id="macarthur-logo" src="../img/macarthur-foundation-logo-white.png" alt="MacArthur Foundation">
-        </div>
-        <div class="col-lg-3">
-          <h4>Sponsored by</h4>
-          <img id="knight-logo" src="../img/knight-logo-white.png" alt="Knight Foundation">
-        </div>
-        <div class="col-lg-3">
-          <h4>A partnership with</h4>
-          <img id="mit-logo" src="../img/mit-media-lab-white.png" alt="MIT Media Lab">
-        </div>
-      </div>
-      <div class="row">
-        <p class="e-creative-commons">This work by GovLab is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
-      </div>
+  <div class="row e-partners" style2="max-width: 62.5em;">
+    <div class="col-lg-3">
+      <h4>A partnership with</h4>
+      <img id="nuy-logo" src="../img/nyu-poly-logo-white.png" alt="NYU - Poly">
+    </div>
+    <div class="col-lg-3">
+      <h4>Sponsored by</h4>
+      <img id="macarthur-logo" src="../img/macarthur-foundation-logo-white.png" alt="MacArthur Foundation">
+    </div>
+    <div class="col-lg-3">
+      <h4>Sponsored by</h4>
+      <img id="knight-logo" src="../img/knight-logo-white.png" alt="Knight Foundation">
+    </div>
+    <div class="col-lg-3">
+      <h4>A partnership with</h4>
+      <img id="mit-logo" src="../img/mit-media-lab-white.png" alt="MIT Media Lab">
+    </div>
+  </div>
+  <div class="row">
+    <p class="e-creative-commons">This work by GovLab is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
+  </div>
 
-    </footer>
+</footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
 <script src="../bower_components/bootstrap-material-design/template/material//js/ripples.min.js"></script>
 <script src="../bower_components/bootstrap-material-design/template/material//js/material.min.js"></script>
 
-</body>
+
+
+
+	</body>
+
 </html>

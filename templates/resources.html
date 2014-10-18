@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Resources{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<section>
+	<h1>Resources</h1>
+</section>
+
+<section>
+
+<div id="container">
+	{% for item in items %}
+	<div class="item">
+		<div>item</div>
+		<div>blabla ...</div>
+	</div>
+	{% endfor %}
+</div>
+
+</section>
+
+</div>
+
+<script>
+var $container = $('#container'), filters = {};
+$container.isotope({
+  itemSelector : '.item',
+  layoutMode: 'fitRows'
+  // masonry: {
+  //   columnWidth: 80
+  // }
+	});
+</script>
+
+
+{% endblock %}
